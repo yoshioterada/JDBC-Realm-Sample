@@ -1,0 +1,13 @@
+jp/co/oracle/jdbcrealm/entities/GrouptablePK_.class
+jp/co/oracle/jdbcrealm/entities/Usertable_.class
+jp/co/oracle/jdbcrealm/SHADigestUtil/SHA256Encoder.class
+jp/co/oracle/jdbcrealm/ejbs/RoleCheckLogic.class
+jp/co/oracle/jdbcrealm/entities/Usertable.class
+jp/co/oracle/jdbcrealm/cdis/RegistPage.class
+jp/co/oracle/jdbcrealm/entities/Grouptable.class
+jp/co/oracle/jdbcrealm/entities/GrouptablePK.class
+jp/co/oracle/jdbcrealm/entities/Grouptable_.class
+jp/co/oracle/jdbcrealm/cdis/IndexPage.class
+jp/co/oracle/jdbcrealm/cdis/HomePage.class
+jp/co/oracle/jdbcrealm/ejbs/UserRegistManager.class
+jp/co/oracle/jdbcrealm/cdis/RemovePage.class

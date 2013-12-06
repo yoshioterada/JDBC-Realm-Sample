@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>ユーザ情報削除画面</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <center>
+                <p:panel header="ユーザ情報削除画面" style="width: 320px">  
+                    <h:panelGrid columns="2" columnClasses="column" cellpadding="5">
+                        <h:outputLabel value="削除ユーザ名: " style="font-size:14px;"/> 
+                        <h:inputText id="userName" value="#{removePage.username}" style="font-size:14px;"/>  
+                    </h:panelGrid>
+                    <h:commandButton value="ユーザ削除" style="font-size:14px;" action="#{removePage.removeDB}"/>
+                    <p:messages id="messages" autoUpdate="true" closable="true" /> 
+                    <h:link value="戻る" outcome="/faces/index.xhtml" />
+                </p:panel>
+            </center>
+        </h:form>
+    </h:body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>ログイン完了画面</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            ログインユーザ名：<h:outputLabel value="#{request.userPrincipal.name}"/>
+            でログインしました。<br/>
+            <h:outputLabel value="EJB 呼び出し結果：" />
+            <h:outputLabel value="#{homePage.roleChekerString}" /><br/>
+
+            <h:outputLabel value="管理者の表示文字列" rendered="#{homePage.isUserInRole('admin')}"/>
+            <h:outputLabel value="ユーザの表示文字列" rendered="#{homePage.isUserInRole('user')}"/>
+            <br/>
+
+            <h:commandButton value="ログアウト" action="#{indexPage.logout()}"/>
+        </h:form>
+    </h:body>
+</html>
